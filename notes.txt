@@ -91,7 +91,10 @@
 - UI state becomes difficult to handle with Vanilla JavaScript.
 - Focus on Business Logic, not on preventing your app from exploding.
 - Huge Eco System, Active Community, High Performance
-- Alternatives to react are Angular, Vue | JQuery(Not so much)	               
+- Alternatives to react are Angular, Vue | JQuery(Not so much)	
+
+4. Understanding SPA's & MPA's
+- See the image.               
  
 
 
