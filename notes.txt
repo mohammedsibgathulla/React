@@ -1,0 +1,5 @@
+1. What Is React? 
+- It is a javascript library for building user interfaces.
+- React uses components for building user interfaces.
+- We can resuse the components.
+- See pdf file for more details.
