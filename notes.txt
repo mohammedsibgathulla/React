@@ -3,3 +3,94 @@
 - React uses components for building user interfaces.
 - We can resuse the components.
 - See pdf file for more details.
+
+2. Writing Our First React Code
+- Go to codepen.io 
+- Add the following in html box 
+	<div class="person">
+	  <h1>Mohammed</h1>
+	  <p>Your age 32</p>  
+	</div>
+
+	<div class="person">
+	  <h1>Amina</h1>
+	  <p>Your age 3</p>  
+	</div>
+
+  Version 1:
+	<div id="p1"></div>
+   
+  Version 2:	
+	<div id="p2"></div>
+  Version 3:
+    <div id="app"></div>	
+
+- Add the following in css box
+	.person {
+	  display: inline-block;
+	  margin: 10px;
+	  border: 1px solid #eee;
+	  box-shadow: 0 2px 2px #ccc;
+	  width: 200px;
+	  padding: 20px;
+	}
+
+- For JS Settings
+	- Select react.min.js & react-dom.min.js to use.
+	- Select Babel as JavaScript preprocessor.
+
+- Add the following in javascript box	
+  Version 1:	
+	function Person() {  //	The function works bcoz of Babel. The syntax used in the function is called jsx.
+	  return (
+	  <div class="person">
+	  <h1>Shaik</h1>
+	  <p>Your age 22</p>  
+	</div>
+	  ); 
+	}
+
+	ReactDOM.render(<Person />, //Here we are converting the function into html element
+	               document.querySelector('#p1')); //It renders a javascript function as a component to the real DOM.
+
+  Version 2:
+	Dynamically we can insert the data as follows
+	function Person(props) {
+	  return (
+	  <div class="person">
+	  <h1>{props.name}</h1>
+	  <p>Your age {props.age}</p>  
+	  </div>
+	  ); 
+	}
+	ReactDOM.render(<Person name="Shaik" age="27"/>, 
+	               document.querySelector('#p1'));
+	ReactDOM.render(<Person name="Adil" age="27"/>, 
+	               document.querySelector('#p2'));	
+
+  Version 3:
+	function Person(props) {
+	  return (
+	  <div class="person">
+	  <h1>{props.name}</h1>
+	  <p>Your age {props.age}</p>  
+	  </div>
+	  ); 
+	}
+
+	var app= (
+	  <div>
+	  <Person name="Shaik" age="27"/>
+	  <Person name="Adil" age="27"/>
+	  </div>
+	);
+	ReactDOM.render(app, 
+	               document.querySelector('#app')); //This is most popular approach used to create components for SPA's.
+ 
+
+
+
+	 
+
+
+
