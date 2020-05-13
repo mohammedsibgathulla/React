@@ -86,6 +86,12 @@
 	);
 	ReactDOM.render(app, 
 	               document.querySelector('#app')); //This is most popular approach used to create components for SPA's.
+
+3. Why React?
+- UI state becomes difficult to handle with Vanilla JavaScript.
+- Focus on Business Logic, not on preventing your app from exploding.
+- Huge Eco System, Active Community, High Performance
+- Alternatives to react are Angular, Vue | JQuery(Not so much)	               
  
 
 
