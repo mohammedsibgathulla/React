@@ -262,6 +262,9 @@ Eg:
 
 	- Here map() is one of the buitl in methods of arrays.
 
+13. Next-Gen JavaScript - Summary
+- See the pdf file.	
+
 
 
 
