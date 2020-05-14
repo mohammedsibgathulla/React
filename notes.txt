@@ -251,6 +251,18 @@ Eg:
 	//As when we created the customer object Shaik was their insided person
 	//Hence we had copied the properties of person into customer object.
 
+12. Refreshing Array Functions
+Eg:
+	const numbers = [1,2,3];
+	const doubleNumArray = numbers.map((num)=> {
+	  return 2*num;
+	});
+	console.log(numbers);
+	console.log(doubleNumArray);
+
+	- Here map() is one of the buitl in methods of arrays.
+
+
 
 
 
