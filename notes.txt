@@ -178,6 +178,36 @@ Eg:
 
 - See the image for more details.	
 
+9. The Spread & Rest Operator
+Eg: 
+	//For Arrays
+	const numbers = [1,2,3];
+	const newNumbers = [...numbers, 5, 6];
+	console.log(newNumbers);
+
+	//For Objects
+	const person = {
+	  name: 'Mohammed'
+	};
+
+	const newPerson = {
+	  ...person,
+	  age: 30
+	}
+	console.log(newPerson);
+
+	//For Functions
+	const filter = (...args) => {
+	  return args.filter(e => e === 3);
+	}
+
+	console.log(filter(1, 2, 3, 4, 5))
+
+
+
+
+ 
+
  
 
 
