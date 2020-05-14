@@ -211,7 +211,47 @@ Eg:
 	console.log(n1, n3);
 - See the image for more details.
 
-	
+11. Reference & Primitive Types Refresher
+- numbers, strings, booleans are so called primitive types when ever you reassign it will copy the values.
+- objects & arrays are reference types here when u reassign the values will not be copied just a reference is created.
+Eg: 
+	//primitive types & copy the value
+	const number = 1;
+	const numberCopy = number;
+	console.log(numberCopy);
+
+	//object & arrays
+	const person = {
+	  name: "Mohammed"
+	};
+
+	const employee = person;
+
+	console.log(employee);
+	 //It will print the same value but here the values are not copied 
+	//into employee 
+
+	person.name="Shaik";
+
+	console.log(employee);
+
+	//Here 'shaik' will be printed but we changed to person
+	//Hence employee just points to the address of person the value is not copied
+
+	//If you want to copy the values then
+
+	const customer = {
+	  ...person
+	};
+
+	person.name="Adil";
+
+	console.log(customer);
+	//Here 'Adil' will not be printed 'Shaik' will be printed
+	//As when we created the customer object Shaik was their insided person
+	//Hence we had copied the properties of person into customer object.
+
+
 
 
 
