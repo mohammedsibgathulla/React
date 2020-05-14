@@ -100,6 +100,23 @@
 - let is used to create a variable values
 - const is used to create a constant values
 - Avoid var to create variables
+
+6. Arrow Functions
+- Normal Function
+	function myFunc() {
+
+	}
+- Arrow Function
+	const myFunc = () => {
+
+	}
+- Bcoz of arrow function no more issues with this keyword.
+Eg: const multiply = (number1, number2) => number1 * number2;
+	console.log(multiply(2,2));
+Eg: print = () => console.log("mohammed");
+	print();
+Eg: const print = name => console.log(name);
+	print("Mohammed");
  
 
 
