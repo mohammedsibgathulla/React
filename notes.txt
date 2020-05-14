@@ -203,6 +203,17 @@ Eg:
 
 	console.log(filter(1, 2, 3, 4, 5))
 
+10. Destructuring
+- With the help of Destructuring we can take the elements from array and properties from the object and use them.
+Eg:
+	const numbers = [1, 2, 3];
+	[n1, ,n3] = numbers;
+	console.log(n1, n3);
+- See the image for more details.
+
+	
+
+
 
 
 
