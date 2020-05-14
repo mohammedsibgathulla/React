@@ -94,7 +94,12 @@
 - Alternatives to react are Angular, Vue | JQuery(Not so much)	
 
 4. Understanding SPA's & MPA's
-- See the image.               
+- See the image.   
+
+5. Understanding 'let' & 'const'
+- let is used to create a variable values
+- const is used to create a constant values
+- Avoid var to create variables
  
 
 
