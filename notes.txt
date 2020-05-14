@@ -117,6 +117,10 @@ Eg: print = () => console.log("mohammed");
 	print();
 Eg: const print = name => console.log(name);
 	print("Mohammed");
+
+7. Exports & Imports (Modules)
+- We can split our code and we can import and export them.
+- For more details see the images.	
  
 
 
