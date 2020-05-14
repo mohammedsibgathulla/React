@@ -148,6 +148,36 @@ Eg: const print = name => console.log(name);
 	const person = new Person();
 	person.printPersonName();
 	person.printGender();
+
+Classes, Properties & Methods
+- Next generation JavaScript offeres differenet syntax of initializing properties & methods.
+Eg:
+	class Human { 
+	    gender = "Male";
+
+	  printGender = () =>{
+	    console.log(this.gender);
+	  }
+	}
+
+
+	class Person extends Human {
+	  constructor() {
+	    super();
+	    name = 'Mohammed';
+	    gender = "female";
+	  }
+	   printPersonName = () =>{
+	    console.log(name);
+	  }
+	}
+
+	const person = new Person();
+	person.printPersonName();
+	person.printGender();
+
+- See the image for more details.	
+
  
 
 
