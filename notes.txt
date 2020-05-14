@@ -121,6 +121,33 @@ Eg: const print = name => console.log(name);
 7. Exports & Imports (Modules)
 - We can split our code and we can import and export them.
 - For more details see the images.	
+
+8. Understanding Classes
+- Classes are similar to classes in other languages.
+	class Human { 
+	  constructor() {
+	    this.gender = "Male";
+	  }
+	  printGender() {
+	    console.log(this.gender);
+	  }
+	}
+
+
+	class Person extends Human {
+	  constructor() {
+	    super();
+	    this.name = 'Mohammed';
+	    this.gender = "female";
+	  }
+	   printPersonName() {
+	    console.log(this.name);
+	  }
+	}
+
+	const person = new Person();
+	person.printPersonName();
+	person.printGender();
  
 
 
