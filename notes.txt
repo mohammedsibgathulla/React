@@ -338,6 +338,9 @@ months.splice(4, 1, 'May');
 console.log(months);
 // expected output: Array ["Jan", "Feb", "March", "April", "May"]
 
+15. The Build Workflow
+- See the image for more details.
+
 
 
 
