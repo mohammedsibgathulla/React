@@ -344,6 +344,24 @@ console.log(months);
 16. Using Create React App
 - Check the url https://github.com/facebook/create-react-app
 
+17. Understanding The Folder Structure
+- package.json file is created by the react app. It has all the dependencies used in the project and scripts. 
+- node_modules folder holds all the dependencies and sub dependencies of our project. You will not add anything in the node_modules folder. It is generated automatically if you run 'npm install' 
+- public folder is the root folder which gets served by the webserver in the end though here it only holds the files we can edit the script files are added in the src folder. In this folder we have index.html file we never add more html pages in this project. If you are creating a multipage project you would create multiple such projects with create react app you wouldn't add more html pages here.
+- manifest.json file have the metadata about our application.
+- src folder have couple of files with these file we will work and this is our actual react application. Here index.js file get access to the root element in the index.html file and it will render our react application with ReactDOM.render() method. 
+	ReactDOM.render(
+	  <React.StrictMode>
+	    <App />
+	  </React.StrictMode>,
+	  document.getElementById('root')
+	);
+
+	The  <App /> object or element is imported for an ./App file which is the App component.
+	App.css file have the css which is used by App.js these are global stylings.
+	//To change the permission of a folder and its contents -> sudo chmod -R 777 //will give read, write, and execute permissions for everyone.
+
+
 
 
 
