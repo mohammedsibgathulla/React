@@ -358,8 +358,30 @@ console.log(months);
 	);
 
 	The  <App /> object or element is imported for an ./App file which is the App component.
-	App.css file have the css which is used by App.js these are global stylings.
+	App.css file have the css which is used by App.js these are global stylings. We also have index.css file it also applies styles globally. It is used for some general setup.
 	//To change the permission of a folder and its contents -> sudo chmod -R 777 //will give read, write, and execute permissions for everyone.
+
+- serviceWorker.js file is for registering a service worker it is generated automatically. It will basically pre-cache our script files. 
+- App.test.js file it basically allows unit tests for components in our application. 	
+
+18. Understanding Component Basics
+- We will have one root app component and we will nest all other components in the root component. 
+- Component has render() method React calls this method to render something to the screen. Every React component has to return or render some html code which can be redered to the DOM to the screen. In the current version it is done implicitly for us no need to write it we just use return method and instead of class we can use function.
+- we then expor the App component as default. 
+
+	import React from 'react';
+	import './App.css';
+
+	function App() {
+	  return (
+	    <div className="App">
+	      <h1> Hi, I am a React App</h1>  //It is the jsx code and not html.
+	    </div>
+	  );
+	}
+
+	export default App;
+
 
 
 
