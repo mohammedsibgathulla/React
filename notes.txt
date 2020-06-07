@@ -382,6 +382,9 @@ console.log(months);
 
 	export default App;
 
+19. Understanding JSX
+- See the project.	
+
 
 
 
