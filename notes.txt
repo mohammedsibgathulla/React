@@ -383,7 +383,10 @@ console.log(months);
 	export default App;
 
 19. Understanding JSX
-- See the project.	
+- See the project.
+
+20. JSX Restrictions
+- 	
 
 
 
