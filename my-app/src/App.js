@@ -14,10 +14,23 @@ class App extends Component {
         {name: 'Amina', age: 4},
         {name: 'Sara', age:1}
 
-    ]
+    ], 
+    otherState: 'Some Other Value'
   }
+
   switchNameHandler = () => {
-    console.log("Hi from switchNameHandler");
+    //console.log("Hi from switchNameHandler");
+    // Don't Do This: this.state.users[0].name = 'Mohammed Sibgathulla';
+    this.setState({
+      users: [
+        {name: 'Mohammed Sibgathulla', age: 32},
+        {name: 'Amina', age: 4},
+        {name: 'Sara', age:2}
+
+    ]
+    }
+      
+    )
   }
 
   render(){

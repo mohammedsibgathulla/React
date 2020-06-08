@@ -597,6 +597,11 @@ console.log(months);
 	    onToggle
 
 
+29. Manipulating The State
+- See the project.
+
+
+
 
 
 
