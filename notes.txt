@@ -397,6 +397,10 @@ console.log(months);
 23. Working With Components & Re-Using Them
 - See the project.
 
+24. Outputting Dynamic Content
+- We use {} to implement the dynamic content.
+- See the project for more details.
+
 
 
 
