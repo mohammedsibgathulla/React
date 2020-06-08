@@ -386,7 +386,10 @@ console.log(months);
 - See the project.
 
 20. JSX Restrictions
-- 	
+- we can't use some keywords in normal html in bcoz there may be ambiguity problems like class in html is className in jsx as it leads to ambiguity.
+
+21. Creating A Functional Component
+- We have created a functional component and modified the previous root functional component to a class component, see the project.
 
 
 
