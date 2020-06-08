@@ -407,6 +407,8 @@ console.log(months);
 26. Understatnding The "Children" Prop
 - Children are anything between the <User> </User>.
 - It can be text or <li> or <p> or anything.
+- See the project.
+
 
 
 
