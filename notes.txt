@@ -391,6 +391,9 @@ console.log(months);
 21. Creating A Functional Component
 - We have created a functional component and modified the previous root functional component to a class component, see the project.
 
+22. Components & JSX Cheat Sheet.
+- See the pdf file.
+
 
 
 
