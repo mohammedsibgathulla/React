@@ -394,7 +394,8 @@ console.log(months);
 22. Components & JSX Cheat Sheet.
 - See the pdf file.
 
-
+23. Working With Components & Re-Using Them
+- See the project.
 
 
 
