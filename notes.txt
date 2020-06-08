@@ -409,6 +409,8 @@ console.log(months);
 - It can be text or <li> or <p> or anything.
 - See the project.
 
+27. Understanding & Using State
+- See the project & pdf file.
 
 
 
