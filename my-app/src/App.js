@@ -8,9 +8,9 @@ class App extends Component {
       <h1> Hi, I am a React App</h1>
       <h1> You can add one more header here</h1>
       <p>This is working great ! </p>
-      <User />
-      <User />
-      <User />
+      <User name="Mohammed" age="30"/>
+      <User name="Amina" age="3">Her Hobbies: Eating, Playing. </User>
+      <User name="Sara" age="1"/>
     </div>
     //<h1>Hi</h1> We can't do this here our JSX expression must have one root element
     //React.createElement('div', null, 'h1', 'Hi I am a React App')

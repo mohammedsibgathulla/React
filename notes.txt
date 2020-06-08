@@ -401,6 +401,9 @@ console.log(months);
 - We use {} to implement the dynamic content.
 - See the project for more details.
 
+25. Working With Props
+- See the project.
+
 
 
 

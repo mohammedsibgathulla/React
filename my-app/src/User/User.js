@@ -1,6 +1,6 @@
 import React from 'react';
-const user = function() {
-    return <p>I'm a User and I am {Math.floor(Math.random() * 30)} years old</p>
+const user = (props) => { //We have implemented ES6 function
+    return <p>I'm a {props.name} and I am {props.age} years old</p>
 }
 
 export default user;
