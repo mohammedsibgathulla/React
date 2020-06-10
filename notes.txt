@@ -613,7 +613,9 @@ console.log(months);
 - We can pass arguments in two ways i.e one by using the bind method and the other by using the arrow function.
 - The arrow function can be inefficient react can re render certain things in you app too often. So it is not recommended that much you can use the bind method.
 
-
+33. Adding Two Way Binding
+- We use onChange on input text to box to update the value of the variable.
+- See the project.
 
 
 

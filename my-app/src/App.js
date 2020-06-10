@@ -33,6 +33,22 @@ class App extends Component {
     )
   }
 
+  nameChangeHandler = (event) => {
+    //console.log("Hi from switchNameHandler");
+    // Don't Do This: this.state.users[0].name = 'Mohammed Sibgathulla';
+    this.setState({
+      users: [
+        {name: "Mohammed", age: 32},
+        {name: event.target.value, age: 4},
+        {name: 'Sara', age:2}
+
+    ]
+    }
+      
+    )
+  }
+
+
   render(){
    return ( <div className="App">
       <h1> Hi, I am a React App</h1>
@@ -44,7 +60,8 @@ class App extends Component {
 
       <User name={this.state.users[1].name} 
       age={this.state.users[1].age}
-      click={() => this.switchNameHandler("Shaik Mohammed Sibgathulla")}> Her Hobbies: Eating, Playing. </User>
+      click={() => this.switchNameHandler("Shaik Mohammed Sibgathulla")}
+      change={this.nameChangeHandler}> Her Hobbies: Eating, Playing. </User>
 
       <User name={this.state.users[2].name} 
       age={this.state.users[2].age} />
