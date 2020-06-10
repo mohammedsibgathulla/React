@@ -604,6 +604,9 @@ console.log(months);
 - We use state in class based components and useState() in function based components.
 - See the projects.
 
+31. Stateless vs Stateful Components
+- 
+
 
 
 
