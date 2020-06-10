@@ -18,12 +18,12 @@ class App extends Component {
     otherState: 'Some Other Value'
   }
 
-  switchNameHandler = () => {
+  switchNameHandler = (newName) => {
     //console.log("Hi from switchNameHandler");
     // Don't Do This: this.state.users[0].name = 'Mohammed Sibgathulla';
     this.setState({
       users: [
-        {name: 'Mohammed Sibgathulla', age: 32},
+        {name: newName, age: 32},
         {name: 'Amina', age: 4},
         {name: 'Sara', age:2}
 
@@ -38,10 +38,16 @@ class App extends Component {
       <h1> Hi, I am a React App</h1>
       <h1> You can add one more header here</h1>
       <p>This is working great ! </p>
-      <button onClick={this.switchNameHandler}>Switch Name</button>
-      <User name={this.state.users[0].name} age={this.state.users[0].age} />
-      <User name={this.state.users[1].name} age={this.state.users[1].age}> Her Hobbies: Eating, Playing. </User>
-      <User name={this.state.users[2].name} age={this.state.users[2].age} />
+      <button onClick={this.switchNameHandler.bind(this, "Mohammed Sibgathulla")}>Switch Name</button>
+      <User name={this.state.users[0].name} 
+      age={this.state.users[0].age} />
+
+      <User name={this.state.users[1].name} 
+      age={this.state.users[1].age}
+      click={() => this.switchNameHandler("Shaik Mohammed Sibgathulla")}> Her Hobbies: Eating, Playing. </User>
+
+      <User name={this.state.users[2].name} 
+      age={this.state.users[2].age} />
 
     </div>
     //<h1>Hi</h1> We can't do this here our JSX expression must have one root element

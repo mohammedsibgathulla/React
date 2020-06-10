@@ -605,9 +605,13 @@ console.log(months);
 - See the projects.
 
 31. Stateless vs Stateful Components
-- 
+- In our project my-app the person component is a stateless component bcoz it has no internal state management and it is a good practice to create as many of these stateless components also called dumb bcoz they have no internal logic or 'Presentational Components' bcoz they present something the output content they get external data and output it in a structural way. 
+- The class based components with state and functional based components with useState are also called 'Smart Components' or 'Container Components' bcoz they container the state of your application. 
 
-
+32. Passing Method References Between Components
+- You can pass methods also as props.
+- We can pass arguments in two ways i.e one by using the bind method and the other by using the arrow function.
+- The arrow function can be inefficient react can re render certain things in you app too often. So it is not recommended that much you can use the bind method.
 
 
 
