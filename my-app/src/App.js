@@ -50,11 +50,18 @@ class App extends Component {
 
 
   render(){
+    const style = {
+      backgroundColor: 'white',
+      font: 'inherit',
+      border: '1px solid blue',
+      padding: '8px',
+      cursor: 'pointer'
+    }
    return ( <div className="App">
       <h1> Hi, I am a React App</h1>
       <h1> You can add one more header here</h1>
       <p>This is working great ! </p>
-      <button onClick={this.switchNameHandler.bind(this, "Mohammed Sibgathulla")}>Switch Name</button>
+      <button style={style} onClick={this.switchNameHandler.bind(this, "Mohammed Sibgathulla")}>Switch Name</button>
       <User name={this.state.users[0].name} 
       age={this.state.users[0].age} />
 

@@ -621,6 +621,10 @@ console.log(months);
 - You have to import the style sheet in your class else the styles will not be applied.
 - See the project.
 
+35. Working With Inline Styles
+- The css style properties have javascript representation. Like for background-color we have backgroundColor.
+- See the project. 
+
 
 
 
