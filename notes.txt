@@ -617,6 +617,10 @@ console.log(months);
 - We use onChange on input text to box to update the value of the variable.
 - See the project.
 
+34. Adding Styling With Stylesheets
+- You have to import the style sheet in your class else the styles will not be applied.
+- See the project.
+
 
 
 
