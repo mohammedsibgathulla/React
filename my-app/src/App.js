@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
 import User from './User/User';
+import UserOutput from './UserOutput/UserOutput';
+import UserInput from './UserInput/UserInput';
 
 class App extends Component {
   // var something = 'someValue'; This is normal javascript code that doesn't work here.
@@ -15,7 +17,8 @@ class App extends Component {
         {name: 'Sara', age:1}
 
     ], 
-    otherState: 'Some Other Value'
+    otherState: 'Some Other Value', 
+    username: 'mohammedsibgathulla'
   }
 
   switchNameHandler = (newName) => {
@@ -48,6 +51,14 @@ class App extends Component {
     )
   }
 
+  changeUsernameHandler = (event) => {
+
+    this.setState({
+    username: event.target.value
+  })
+
+  }
+
 
   render(){
     const style = {
@@ -72,6 +83,14 @@ class App extends Component {
 
       <User name={this.state.users[2].name} 
       age={this.state.users[2].age} />
+
+      <hr />
+      <label>Assignment</label>
+      <UserInput currentname={this.state.username} changeusername={this.changeUsernameHandler}/>
+      <UserOutput username={this.state.username}/>
+      <UserOutput username={this.state.username}/>
+      <UserOutput username={'shaikamina'}/>
+      
 
     </div>
     //<h1>Hi</h1> We can't do this here our JSX expression must have one root element

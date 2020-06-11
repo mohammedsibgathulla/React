@@ -625,6 +625,9 @@ console.log(months);
 - The css style properties have javascript representation. Like for background-color we have backgroundColor.
 - See the project. 
 
+36. Assignment & Solution
+- See the image & project.
+
 
 
 
