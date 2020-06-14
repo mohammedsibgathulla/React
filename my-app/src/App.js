@@ -74,14 +74,11 @@ class App extends Component {
       padding: '8px',
       cursor: 'pointer'
     }
-   return ( <div className="App">
-      <h1> Hi, I am a React App</h1>
-      <h1> You can add one more header here</h1>
-      <p>This is working great ! </p>
-      <button style={style} onClick={this.toggleUserHandler}>Toggle Users</button>
-      {
-        this.state.showUsers === true ?
-      <div>
+    let users = null;
+
+    if(this.state.showUsers) {
+      users = (
+        <div>
       <User name={this.state.users[0].name} 
       age={this.state.users[0].age} />
 
@@ -92,8 +89,15 @@ class App extends Component {
 
       <User name={this.state.users[2].name} 
       age={this.state.users[2].age} />
-      </div> : null
-      }
+      </div>
+      );
+    }
+   return ( <div className="App">
+      <h1> Hi, I am a React App</h1>
+      <h1> You can add one more header here</h1>
+      <p>This is working great ! </p>
+      <button style={style} onClick={this.toggleUserHandler}>Toggle Users</button>
+      {users}
 
       <hr />
       <label>Assignment</label>

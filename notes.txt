@@ -632,6 +632,9 @@ console.log(months);
 - We can inject javascript expressions into JSX with single { } braces. 
 - See the project. 
 
+38. Handling Dynamic Content "The JavaScript Way"
+- See the project. 
+
 
 
 
