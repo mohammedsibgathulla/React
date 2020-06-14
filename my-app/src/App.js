@@ -18,7 +18,7 @@ class App extends Component {
 
     ], 
     otherState: 'Some Other Value', 
-    username: 'mohammedsibgathulla'
+    username: 'mohammedsibgathulla',
   }
 
   switchNameHandler = (newName) => {
@@ -59,6 +59,12 @@ class App extends Component {
 
   }
 
+  toggleUserHandler = () => {
+    const doesShow = this.state.showUsers;
+    this.setState({
+      showUsers: !doesShow
+    }); 
+  }
 
   render(){
     const style = {
@@ -72,7 +78,10 @@ class App extends Component {
       <h1> Hi, I am a React App</h1>
       <h1> You can add one more header here</h1>
       <p>This is working great ! </p>
-      <button style={style} onClick={this.switchNameHandler.bind(this, "Mohammed Sibgathulla")}>Switch Name</button>
+      <button style={style} onClick={this.toggleUserHandler}>Toggle Users</button>
+      {
+        this.state.showUsers === true ?
+      <div>
       <User name={this.state.users[0].name} 
       age={this.state.users[0].age} />
 
@@ -83,6 +92,8 @@ class App extends Component {
 
       <User name={this.state.users[2].name} 
       age={this.state.users[2].age} />
+      </div> : null
+      }
 
       <hr />
       <label>Assignment</label>

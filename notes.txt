@@ -628,6 +628,10 @@ console.log(months);
 36. Assignment & Solution
 - See the image & project.
 
+37. Rendering Content Conditionally
+- We can inject javascript expressions into JSX with single { } braces. 
+- See the project. 
+
 
 
 
