@@ -635,6 +635,10 @@ console.log(months);
 38. Handling Dynamic Content "The JavaScript Way"
 - See the project. 
 
+39. Outputting Lists
+- We use the map function to output the array contents as list.
+- See the project.
+
 
 
 
